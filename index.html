@@ -7,13 +7,13 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./css/style.css">
     <title>COVID19</title>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">COVID19</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,39 +24,109 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="about.html">About virus</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="#">Symptomes</a>
+                <a class="nav-link" href="protect-yourself.html">Protect yourself</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Protect your self</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+                <a class="nav-link" href="statistics.html">Statistics</a>
             </li>
           </ul>
         </div>
-      </nav>
+    </nav>
     <!-- Navbar -->
 
-    <!-- Landing Page -->
-    <div class="container-fluid">
-
-    </div>
-    <!-- Landing Page -->
+    <!-- Banner -->
+    <section class="mb-3" id="banner">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1>Coronavirus</h1>
+                    <h3 class="text-justify text-muted">The 2019 epedimy that has not been previously identified in humans 
+                        and doctors around the world are unable to resolve.</h3>
+                </div>
+                <div class="col-md-8">
+                    <img src="./assets/undraw_doctors_hwty.svg" width="100%" height="100%" alt="banner">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner -->
 
     <!-- About -->
-    
+    <section id="about">
+        <div class="container p-3">
+            <div class="row">
+                <div class="col-md-6">
+                <h2 class="primary-color">What is a virus?</h2>
+                <p class="text-justify text-muted">
+                    A virus is a collection of genetic material 
+                    (DNA or RNA) inside a protein shell. There is 
+                    much scientific debate about whether viruses 
+                    are alive. Like living creatures, they carry 
+                    genes and evolve. But they are unable to 
+                    reproduce on their own and must infect living 
+                    cells and hijack cellular machinery 
+                    (such as ribosomes) in order to copy themselves.
+                    Though viruses are tiny, they are fierce. Influenza (the flu) alone has killed tens of millions of humans in the last 100 years.
+                </p>
+                </div>
+                <div class="col-md-6" style="width: 400px; height: 400px;">
+                <img src="./assets/bacteria.svg" style="width: 100%; height: 100%;" alt="virus">
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- About -->
+
+    <!-- Symptomes -->
+    <section id="symptomes">
+        <div class="container p-3">
+            <div class="row">
+                <div class="col-md-6 align-items-center" style="width: 400px; height: 400px;">
+                    <div class="row align-items-center">
+                        <div class="col" >
+                                <img class="align-self-center" src="./assets/cough.svg" style="width: 100%; height: 100%;" alt="cough">
+                                <p class="primary-color text-center">Cough</p>
+                        </div>
+                        <div class="col align-self-center" >
+                            <img src="./assets/fever.svg" style="width: 100%; height: 100%;" alt="fever">
+                            <p class="primary-color text-center">Fever</p>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col" >
+                            <img src="./assets/patient.svg" style="width: 100%; height: 100%;" alt="headache">
+                            <p class="primary-color text-center">Headache</p>
+                        </div>
+                        <div class="col" >
+                            <img src="./assets/lung.svg" style="width: 100%; height: 100%;" alt="lung">
+                            <p class="primary-color text-center">Hard breath</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <h2 class="primary-color">Watch for symptoms</h2>
+                    <p class="text-justify text-muted">
+                        Reported illnesses have ranged from mild symptoms to severe illness and death for confirmed coronavirus disease 2019 (COVID-19) cases.
+                        The following symptoms may appear 2-14 days after exposure.</p>
+                        <ul>
+                            <li>Fever</li>
+                            <li>Cough</li>
+                            <li>Headache</li>
+                            <li>Shortness of breath</li>
+                        </ul>
+                    <p class="text-justify text-muted">    
+                        This is based on what has been seen previously as the incubation period of MERS-CoV viruses.
+                    </p>
+                    <a class="button" href="sick.html">What to do if you are sick</a>
+                    <a class="button" href="protect-yourself.html">How to protect yourself </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Symptomes -->
+
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

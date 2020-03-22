@@ -6,6 +6,7 @@
 section {
     height: auto;
     padding: 20px 10px;
+    overflow: hidden;
 }
 /* Global */
 
@@ -27,7 +28,7 @@ nav .navbar-toggler{
 section#banner h1 {
 
     color: #02C26A;
-    font-size: 80px;
+    font-size: 50px;
     font-family: 'Dosis', sans-serif;
 
 }
@@ -75,6 +76,14 @@ section#symptomes .button:hover {
     cursor: pointer;
 }
 /* Symptoms */
+
+/* Footer */
+#footer {
+    background-color: #02C26A;
+    color: #fff;
+    padding: 10px 20px;
+}
+/* Footer */
 
 /***** sick page *****/
 

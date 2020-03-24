@@ -63,6 +63,7 @@ section#symptomes .button {
     color: #fff;
     padding: 10px 25px;
     outline: none;
+    text-decoration: none;
     /* border: none; */
     border: 2px solid #fff;
     border-radius: 5px;
@@ -91,4 +92,23 @@ section .green-num {
     color: #02C26A;
     font-size: 120px;
     font-family: 'Dosis', sans-serif;
+}
+
+
+/***** statistics page *****/
+
+@media screen and (min-width: 480px) {
+    section#stat-cards {
+        min-height: 509px;
+    }
+}
+section#stat-cards div.card {
+    background-color: #02C26A !important;
+    color: #fff !important;
+}
+
+section#stat-cards h1,
+section#stat-cards h2 
+{
+    color: #02C26A;
 }

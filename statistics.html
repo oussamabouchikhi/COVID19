@@ -34,44 +34,103 @@
 			<a class="nav-link" href="#">Statistics<span class="sr-only">(current)</span></a>
 		</li>
 	  </ul>
+
 	</div>
 </nav>
 <!-- Navbar -->
 
 	<!-- Cards -->
-	<div class="container p-2 mt-3 mb-3">
-		<div class="row">
+	<section id="stat-cards">
+		<div class="container p-2 mt-2 mb-2">
 
-			<div class="col">
-				<div style="background-color: #02C26A !important;" class="card text-white bg-success mt-4 mb-4 p-3">
-				<div class="card-body text-center">
-					<h5 class="card-title h3">Affected</h5>
-					<p class="card-text h1">90</p>
+			<h1 class="text-center mb-5">Statistics</h1>
+
+
+			<h2>General Statistics</h2>
+			<div class="row">
+	
+				<div class="col-md-3">
+					<div  class="card text-white bg-success mt-4 mb-4">
+					<div class="card-body text-center">
+						<h5 class="card-title h3">Total Cases</h5>
+						<p class="card-text h1" id="total_cases">90</p>
+					</div>
+					</div>
 				</div>
+	
+				<div class="col-md-3">
+					<div class="card mt-4 mb-4">
+					<div class="card-body text-center">
+						<h5 class="card-title h3">Total Recovering</h5>
+						<p class="card-text h1" id="total_recovered">9</p>
+					</div>
+					</div>
 				</div>
+	
+				<div class="col-md-3">
+					<div  class="card mt-4 mb-4">
+					<div class="card-body text-center">
+						<h5 class="card-title h3">Total Unresolved</h5>
+						<p class="card-text h1" id="total_unresolved">32</p>
+					</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div  class="card mt-4 mb-4">
+					<div class="card-body text-center">
+						<h5 class="card-title h3">Total Deaths</h5>
+						<p class="card-text h1" id="total_deaths">32</p>
+					</div>
+					</div>
+				</div>
+				
 			</div>
 
-			<div class="col">
-				<div style="background-color: #02C26A!important;" class="card text-white bg-success mt-4 mb-4 p-3">
-				<div class="card-body text-center">
-					<h5 class="card-title h3">Deads</h5>
-					<p class="card-text h1">9</p>
+			<h2>Today Statistics</h2>
+			<div class="row">
+	
+				<div class="col-md-3">
+					<div  class="card mt-4 mb-4">
+						<div class="card-body text-center">
+							<h5 class="card-title h3">Affected</h5>
+							<p class="card-text h1" id="total_new_cases_today">90</p>
+						</div>
+					</div>
 				</div>
+	
+				<div class="col-md-3">
+					<div class="card mt-4 mb-4">
+						<div class="card-body text-center">
+							<h5 class="card-title h3">Today Deads</h5>
+							<p class="card-text h1" id="total_new_deaths_today">9</p>
+						</div>
+					</div>
 				</div>
-			</div>
+	
+				<div class="col-md-3">
+					<div  class="card mt-4 mb-4">
+						<div class="card-body text-center">
+							<h5 class="card-title h3">Active Cases</h5>
+							<p class="card-text h1" id="total_active_cases">32</p>
+						</div>
+					</div>
+				</div>
 
-			<div class="col">
-				<div style="background-color: #02C26A !important;" class="card text-white bg-success mt-4 mb-4 p-3">
-				<div class="card-body text-center">
-					<h5 class="card-title h3">Recovering</h5>
-					<p class="card-text h1">32</p>
+				<div class="col-md-3">
+					<div  class="card mt-4 mb-4">
+						<div class="card-body text-center">
+							<h5 class="card-title h3">Serious Cases</h5>
+							<p class="card-text h1" id="total_serious_cases">32</p>
+						</div>
+					</div>
 				</div>
-				</div>
+				
 			</div>
-			
 		</div>
-	</div>
+	</section>
 	<!-- Cards -->
+	
 
 	<!-- Footer -->
     <div id="footer">
@@ -81,11 +140,10 @@
     </div>
     <!-- Footer -->
 
-
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="./js/main.js"></script>
+    
 </body>
 </html>
